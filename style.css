@@ -477,10 +477,10 @@ span{
 }
 
 @media (max-width: 991px){
-    .navbar a:nth-child(1),
+    /*.navbar a:nth-child(1),
     .navbar a:nth-child(2){
         color: var(--main-color);
-    }
+    }*/
 
     .navbar a.active::before{
         background: var(--main-color);
@@ -514,8 +514,45 @@ span{
     #menu-icon{
         display: block;
     }
+
+    #darkMode-icon{
+        position: absolute;
+        right: 7rem;
+        font-size: 2.6rem;
+        color: var(--text-color);
+        margin-bottom: .1rem;
+    }
+
     .navbar{
         position: absolute;
         top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0,0,0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        display: none;
+    }
+
+    .navbar.active{
+        display: block;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: var(--text-color);
+    }
+    .navbar a:nth-child(1),
+    .navbar a:nth-child(2){
+        color: var(--text-color);
+    }
+    .navbar a:active{
+        color: var(--main-color);
+    }
+    .navbar a::before{
+        display: none;
     }
 }
