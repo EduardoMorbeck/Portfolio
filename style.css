@@ -101,6 +101,7 @@ body{
     font-size: 3rem;
     color: var(--text-color);
     display: none;
+    cursor: pointer;
 }
 
 section{
@@ -554,5 +555,62 @@ span{
     }
     .navbar a::before{
         display: none;
+    }
+    .home{
+        padding: 0 3% 23rem;
+        justify-content: center;
+        text-align: center;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .home-content .social-media a{
+        margin: 2.5rem .75rem 3rem;
+    }
+    .home .profession-container{
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .home .profession-container .profession-box{
+        position: fixed;
+        top: 60%;
+        left: 0;
+        border-radius: 0;
+        width: 100%;
+    }
+    .home .profession-box .profession{
+        padding: 0 13px;
+        left: auto;
+        transform-origin: 0;
+    }
+
+    .home .profession-container .profession-box:nth-child(1){
+        transform: rotate(-90deg) translate(-120px, -210px);
+    }
+    .home .profession-container .profession-box:nth-child(1) i{
+        margin-right: 0;
+    }
+    .home .profession-container .profession-box:nth-child(2){
+        transform: rotate(0deg) translate(0, -335px);
+    }
+
+    .home .profession-box .circle{
+        position: fixed;
+        width: 670px;
+        height: 670px;
+        z-index: -1;
+    }
+    
+    .home .profession-container .overlay{
+        position: fixed;
+        top: 70rem;
+        left: 50%;
+        right: 0;
+        transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
+        border-width: 23.9rem;
     }
 }
