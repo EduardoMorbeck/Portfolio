@@ -325,6 +325,14 @@ span{
     margin: 2rem 0 3rem;
 }
 
+.about-content .more{
+    display: none;
+}
+
+.about-content .more.active{
+    display: block;
+}
+
 .portfolio{
     padding-bottom: 10rem;
 }
@@ -396,11 +404,12 @@ span{
     height: 5rem;
     background: var(--white-color);
     border-radius: 50%;
+    margin-bottom: 5px;
 }
 
 .portfolio-layer a i{
-    font-size: 2rem;
-    color: var(--text-color);
+    font-size: 1.5rem;
+    color: black;
 }
 
 .contact h2{

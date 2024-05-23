@@ -1,6 +1,13 @@
 let menuIcon = document.querySelector('#menu-icon')
 let navbar = document.querySelector('.navbar')
 
+let aboutBtn = document.querySelector('#aboutBtn')
+let aboutMore = document.querySelector('.about-content .more')
+
+aboutBtn.onclick = () => {
+    aboutMore.classList.toggle('active')
+}
+
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('fa-x')
     navbar.classList.toggle('active')
