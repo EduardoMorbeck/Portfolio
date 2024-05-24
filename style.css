@@ -401,7 +401,7 @@ span{
     color: black;
 }
 
-.contact h2{
+/*.contact h2{
     margin-bottom: 3rem;
 }
 
@@ -441,7 +441,7 @@ span{
 .contact form .btn{
     margin-top: 2rem;
     cursor: pointer;
-}
+}*/
 
 .footer{
     display: flex;
@@ -511,10 +511,10 @@ span{
 }
 
 @media (max-width: 991px){
-    .navbar a:nth-child(1){
+    /*.navbar a:nth-child(1){
         color: var(--main-color);
         padding: 0 15px;
-    }
+    }*/
 
     .navbar a.active::before{
         background: var(--main-color);
@@ -536,9 +536,9 @@ span{
     .portfolio{
         padding-bottom: 7rem;
     }
-    .contact{
+    /*.contact{
         min-height: auto;
-    }
+    }*/
     .footer{
         padding: 2rem 3%;
     }
@@ -699,9 +699,9 @@ span{
         transform: rotate(180deg) translate(-210px, -335px);
     }
 
-    .contact form .input-box input {
+    /*.contact form .input-box input {
         width: 100%;
-    }
+    }*/
 }
 
 @media (max-width: 365px){
