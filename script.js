@@ -26,7 +26,7 @@ let sections = document.querySelectorAll('section')
 let navLinks = document.querySelectorAll('header nav a')
 
 window.onscroll = () =>{
-    sections.forEach(sec => { /*Barra de navegação interativa*/
+    sections.forEach(sec => {
         let top = window.scrollY
         let offset = sec.offsetTop - 150
         let height = sec.offsetHeight
@@ -56,7 +56,7 @@ darkModeIcon.onclick = () => {
 }
 
 ScrollReveal({
-    /*reset: true,*/
+    reset: true,
     distance: '80px',
     duration: 2000,
     delay: 200
