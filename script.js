@@ -4,8 +4,17 @@ let navbar = document.querySelector('.navbar')
 let aboutBtn = document.querySelector('#aboutBtn')
 let aboutMore = document.querySelector('.about-content .more')
 
+let more = true
+
 aboutBtn.onclick = () => {
     aboutMore.classList.toggle('active')
+    if(more){
+        aboutBtn.innerHTML = 'Resumir'
+        more = false
+    }else if(!more){
+        aboutBtn.innerHTML = 'Ler mais'
+        more = true
+    }
 }
 
 menuIcon.onclick = () => {
