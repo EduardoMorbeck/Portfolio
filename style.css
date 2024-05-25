@@ -657,7 +657,7 @@ span{
         transform: rotate(0deg) translate(-0px, -335px);
     }
     .home .profession-box .profession:nth-child(1){
-        transform: rotate(180deg) translate(-220px, -335px);
+        transform: rotate(180deg) translate(-210px, -335px);
     }
 
     .home .profession-box .circle{
