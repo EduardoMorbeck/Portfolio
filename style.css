@@ -14,7 +14,7 @@
 :root{
     --bg-color: #fdfdfd;
     --text-color: #333;
-    --main-color: #5d38d6;
+    --main-color: #603cd8;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0,0,0, .2);
 }
@@ -141,7 +141,7 @@ section{
 }
 
 .home-content p{
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 .home-content .social-media a{
@@ -478,7 +478,7 @@ span{
     color: black;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1450px){
     html{
         font-size: 55%;
     }
@@ -493,9 +493,13 @@ span{
     .home .profession-container .overlay{
         right: -9rem;
     }
+
+    .portfolio .portfolio-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1150px){
     .header{
         padding: 2rem 3%;
     }
@@ -508,9 +512,14 @@ span{
     .home .profession-container .overlay{
         right: -15rem;
     }
+
+    .home-img img{
+        display: none;
+    }
+
 }
 
-@media (max-width: 991px){
+@media (max-width: 1000px){
     /*.navbar a:nth-child(1){
         color: var(--main-color);
         padding: 0 15px;
@@ -530,9 +539,7 @@ span{
     .home .profession-container .overlay{
         right: -39.5rem;
     }
-    .home-img img{
-        display: none;
-    }
+    
     .portfolio{
         padding-bottom: 7rem;
     }
@@ -542,9 +549,23 @@ span{
     .footer{
         padding: 2rem 3%;
     }
+
+    .about{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .about-content h2{
+        text-align: center;
+    }
+
+    .about-img img{
+        width: 60vw;
+        margin-top: -2rem;
+    }
 }
 
-@media (max-width: 768px){
+@media (max-width: 868px){
     .navbar a:nth-child(1){
         color: var(--main-color);
         padding: 0;
@@ -653,20 +674,6 @@ span{
         right: 0;
         transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
         border-width: 23.9rem;
-    }
-
-    .about{
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-
-    .about-content h2{
-        text-align: center;
-    }
-
-    .about-img img{
-        width: 70vw;
-        margin-top: -2rem;
     }
 
     .portfolio h2{
