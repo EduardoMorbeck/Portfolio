@@ -712,6 +712,10 @@ span{
 }
 
 @media (max-width: 365px){
+    .home .profession-container .profession-box{
+        top: 70%;
+    }
+
     .about-img img{
         width: 90vw;
     }
