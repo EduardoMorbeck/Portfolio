@@ -141,7 +141,7 @@ section{
 }
 
 .home-content p{
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 .home-content .social-media a{
@@ -401,48 +401,6 @@ span{
     color: black;
 }
 
-/*.contact h2{
-    margin-bottom: 3rem;
-}
-
-.contact form{
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.contact form .input-box{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact form .input-box input,
-.contact form textarea{
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    background: var(--bg-color);
-    border-radius: .8rem;
-    margin: .7rem 0;
-    box-shadow: 0 .1rem .5rem var(--shadow-color);
-}
-
-.contact form .input-box input{
-    width: 49%;
-}
-
-.contact form textarea{
-    resize: none;
-}
-
-.contact form .btn{
-    margin-top: 2rem;
-    cursor: pointer;
-}*/
-
 .footer{
     display: flex;
     justify-content: space-between;
@@ -520,11 +478,6 @@ span{
 }
 
 @media (max-width: 1000px){
-    /*.navbar a:nth-child(1){
-        color: var(--main-color);
-        padding: 0 15px;
-    }*/
-
     .navbar a.active::before{
         background: var(--main-color);
         opacity: .7;
@@ -543,9 +496,7 @@ span{
     .portfolio{
         padding-bottom: 7rem;
     }
-    /*.contact{
-        min-height: auto;
-    }*/
+
     .footer{
         padding: 2rem 3%;
     }
@@ -686,6 +637,10 @@ span{
 }
 
 @media (max-width: 450px){
+    .home .profession-box .profession:nth-child(1){
+        transform: rotate(180deg) translate(-210px, -335px);
+    }
+
     html{
         font-size: 50%;
     }
@@ -697,21 +652,21 @@ span{
     .home{
         padding: 0 3% 30rem;
     }
-
-    /*.home .profession-box .profession:nth-child(1){
-        transform: rotate(-90deg) translate(-110px, -220px);
-    }
-
-    .home .profession-box .profession:nth-child(2){
-        transform: rotate(180deg) translate(-210px, -335px);
-    }*/
-
-    /*.contact form .input-box input {
-        width: 100%;
-    }*/
 }
 
 @media (max-width: 365px){
+    .home-content h3{
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: .3;
+    }
+    
+    .home-content h1{
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: .3rem;
+    }
+    
     .home .profession-container .profession-box{
         top: 70%;
     }
