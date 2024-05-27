@@ -243,7 +243,7 @@ section{
 }
 
 .home .profession i{
-    font-size: 3.8rem;
+    font-size: 3.5rem;
 }
 
 .home .profession h3{
@@ -253,8 +253,8 @@ section{
 }
 
 .home .profession-box .circle{
-    width: 585px;
-    height: 585px;
+    width: 560px;
+    height: 560px;
     border: 3px solid var(--main-color);
     border-radius: 50%;
 }
@@ -437,6 +437,11 @@ span{
 }
 
 @media (max-width: 1450px){
+    .home .profession-box .circle{
+        width: 585px;
+        height: 585px;
+    }
+
     html{
         font-size: 55%;
     }
@@ -478,6 +483,10 @@ span{
 }
 
 @media (max-width: 1000px){
+    .home-content p{
+        font-size: 2.4rem;
+    }
+
     .navbar a.active::before{
         background: var(--main-color);
         opacity: .7;
@@ -652,6 +661,7 @@ span{
     .home{
         padding: 0 3% 30rem;
     }
+
 }
 
 @media (max-width: 365px){
