@@ -291,8 +291,8 @@ span{
     gap: 4rem;
 }
 
-.about-img{
-    width: 80vw;
+.about-img img{
+    width: 40vw;
 }
 
 .heading{
@@ -309,9 +309,19 @@ span{
     font-size: 2rem;
 }
 
-.about-content p{
+.about-content p, .about-content li{
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+}
+
+.about-list{
+    display: flex;
+    justify-content: start;
+}
+
+.about-content li{
+    text-align: start;
+    line-height: 4px;
 }
 
 .about-content .more{
@@ -483,6 +493,10 @@ span{
 }
 
 @media (max-width: 1000px){
+    .about-list{
+        justify-content: center;
+    }
+
     .home-content p{
         font-size: 2.4rem;
     }
