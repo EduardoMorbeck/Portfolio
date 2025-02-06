@@ -523,6 +523,7 @@ span{
 }
 
 .about-content p, .about-content li{
+    text-align: justify;
     font-size: 1.8rem;
     margin: 2rem 0 3rem;
 }
@@ -708,10 +709,6 @@ span{
 @media (max-width: 1150px){
     .header{
         padding: 2rem 3%;
-    }
-
-    section{
-        padding: 0 0 0 2vw ;
     }
 }
 
@@ -919,7 +916,7 @@ span{
     }
     
     .home .profession-container .profession-box{
-        top: 70%;
+        top: 60%;
     }
 
     .about-img img{
