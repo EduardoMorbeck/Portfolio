@@ -1,6 +1,15 @@
 let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
 
+menuIcon.addEventListener("change", function () {
+  navbar.classList.toggle("active", this.checked);
+});
+
+window.addEventListener("scroll", function () {
+  navbar.classList.remove("active");
+  menuIcon.checked = false; // Garante que o ícone volte ao estado inicial
+});
+
 let aboutBtn = document.querySelector("#aboutBtn");
 let aboutMore = document.querySelector(".about-content .more");
 
