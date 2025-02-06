@@ -713,6 +713,9 @@ span{
 }
 
 @media (max-width: 968px){
+    .portfolio-box{
+        height: 24vh;
+    }
     .header{
         background: var(--bg-color);
     }
