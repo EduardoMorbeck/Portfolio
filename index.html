@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desenvolvedor web especializado em front-end, apaixonado por tecnologia e inovação. Veja meus projetos e entre em contato!">
     <title>Portfolio</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,25 +13,62 @@
 </head>
 
 <body>
-    <header class="header">
+    <section class="bodyParallax">
+        <div class="container_mouse" id="mouse">
+            <span class="mouse-btn">
+                <span class="mouse-scroll"></span>
+            </span>
+            <h2 data-i18n="scroll"></h2>
+        </div>
+        <div class="monitor-container" id="monitor">
+            <svg class="screen computer" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" id="Layer_1" viewBox="0 0 64 64" width="300" height="300" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs"><g width="100%" height="100%" transform="matrix(1,0,0,1,0,0)"><title/><path d="M61.09,1.72H2.9A2.9,2.9,0,0,0,0,4.63V48.12A2.9,2.9,0,0,0,2.9,51H27v5.56H20.13a3.83,3.83,0,0,0-3.82,3.83v.89a1,1,0,0,0,1,1H46.72a1,1,0,0,0,1-1v-.89a3.83,3.83,0,0,0-3.82-3.83H37V51h24.1A2.91,2.91,0,0,0,64,48.12V4.63A2.91,2.91,0,0,0,61.09,1.72ZM43.87,58.53a1.89,1.89,0,0,1,1.88,1.81H18.25a1.89,1.89,0,0,1,1.88-1.81ZM29,56.59V51h6.1v5.56Zm33.11-8.47a1,1,0,0,1-1,1H2.9a1,1,0,0,1-1-1V4.63a1,1,0,0,1,1-1H61.09a1,1,0,0,1,1,1Z" fill="#ffffff" fill-opacity="1" data-original-color="#000000ff" stroke="none" stroke-opacity="1"/><path d="M57.29,5.78H6.7a2.52,2.52,0,0,0-2.64,2.4v32.1a2.52,2.52,0,0,0,2.64,2.4H57.29a2.53,2.53,0,0,0,2.65-2.4V8.18A2.53,2.53,0,0,0,57.29,5.78ZM58,40.28c0,.22-.3.46-.71.46H6.7c-.4,0-.7-.24-.7-.46V8.18c0-.22.3-.47.7-.47H57.29c.41,0,.71.25.71.47Z" fill="#ffffff" fill-opacity="1" data-original-color="#000000ff" stroke="none" stroke-opacity="1"/><path d="M32,44a1.87,1.87,0,1,0,1.86,1.87A1.87,1.87,0,0,0,32,44Zm0,2.44a.58.58,0,1,1,.57-.57A.57.57,0,0,1,32,46.46Z" fill="#ffffff" fill-opacity="1" data-original-color="#000000ff" stroke="none" stroke-opacity="1"/></g></svg>
+
+            <svg class="screen phone" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 409.6 409.6" style="enable-background:new 0 0 409.6 409.6;" xml:space="preserve" width="300" height="300" xmlns:svgjs="http://svgjs.dev/svgjs"><g width="100%" height="100%" transform="matrix(1,0,0,1,0,0)">
+            <path d="M284.675,0h-159.75c-15.122,0-27.427,12.305-27.427,27.43v354.74c0,15.125,12.305,27.43,27.427,27.43h159.75&#10;&#9;&#9;&#9;c15.122,0,27.427-12.305,27.427-27.43V27.43C312.102,12.305,299.797,0,284.675,0z M301.862,382.17c0,9.48-7.71,17.19-17.188,17.19&#10;&#9;&#9;&#9;h-159.75c-9.477,0-17.188-7.71-17.188-17.19V335.9l194.125,0.005V382.17z M301.862,325.665l-194.125-0.005V56.755h194.125V325.665&#10;&#9;&#9;&#9;z M301.862,46.515H107.738V27.43c0-9.48,7.71-17.19,17.188-17.19h159.75c9.477,0,17.188,7.71,17.188,17.19V46.515z" fill="#ffffff" fill-opacity="1" data-original-color="#000000ff" stroke="none" stroke-opacity="1"/>
+            <path d="M204.803,347.44c-0.003,0-0.008,0-0.013,0c-5.625,0-10.915,2.19-14.893,6.17c-3.982,3.98-6.175,9.275-6.175,14.905&#10;&#9;&#9;&#9;c0,11.62,9.455,21.075,21.075,21.075c0.003,0,0.008,0,0.013,0c5.625,0,10.915-2.19,14.892-6.17&#10;&#9;&#9;&#9;c3.983-3.98,6.175-9.275,6.175-14.905C225.878,356.895,216.423,347.44,204.803,347.44z M212.462,376.18&#10;&#9;&#9;&#9;c-2.045,2.045-4.762,3.17-7.655,3.17c-0.003,0-0.005,0-0.008,0c-5.975,0-10.838-4.86-10.838-10.835&#10;&#9;&#9;&#9;c0-2.895,1.128-5.62,3.175-7.665c2.045-2.045,4.762-3.17,7.655-3.17c0.003,0,0.005,0,0.008,0c5.975,0,10.838,4.86,10.838,10.835&#10;&#9;&#9;&#9;C215.638,371.41,214.51,374.135,212.462,376.18z"fill="#ffffff" fill-opacity="1" data-original-color="#000000ff" stroke="none"stroke-opacity="1"/>
+            </g></svg>
+        </div>
+        <script src="parallax.js"></script>
+    </section>
+
+     <header class="header">
         <a href="#" class="logo">Portfolio.</a>
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">Sobre</a>
-            <a href="#projetos">Projetos</a>
+            <a href="#home" class="active" data-i18n="home"></a>
+            <a href="#about" data-i18n="about"></a>
+            <a href="#projetos" data-i18n="projects"></a>
+
+            <select id="languageSelect" class="languageSelect">
+                <option value="pt" data-i18n="portuguese"></option>
+                <option value="en" data-i18n="english"></option>
+                <option value="es" data-i18n="spanish"></option>
+            </select>
         </nav>
 
-        <div class="fa-solid fa-moon" id="darkMode-icon">
-        </div>
-        <div class="fa-solid fa-bars" id="menu-icon">
+        <input id="switch" type="checkbox">
+        <div class="circleContainer" id="darkMode-icon">
+            <div class="content">  
+                <label for="switch">
+                    <div class="circleIcon">
+                        <div class="crescent"></div>
+                    </div>
+                </label>
+            </div>
         </div>
 
+        <label class="menu" for="menu-icon">
+            <input type="checkbox" id="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
     </header>
-    <section class="home" id="home">
+
+    <section class="home section" id="home">
         <div class="home-content">
-            <h3>Olá, me chamo</h3>
+            <h3 data-i18n="hello"></h3>
             <h1>Eduardo Morbeck</h1>
-            <p>Meu objetivo não é apenas programar, mas sim <strong>visualizar suas ideias </strong>e<strong> dar vida aos seus projetos.</strong></p>
+            <p data-i18n="helloText"></p>
             
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/eduardo-dos-santos-morbeck/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -38,7 +76,7 @@
                 <a href="https://api.whatsapp.com/send?phone=5554981536510" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
 
-            <a href="img/Curriculo Eduardo dos Santos Morbeck.pdf" download="Eduardo_Morbeck_CV.pdf" class="btn">Download CV</a>
+            <a href="img/Curriculo Eduardo dos Santos Morbeck.pdf" download="Eduardo_Morbeck_CV.pdf" class="btn" data-i18n="download"></a>
         </div>
 
         <div class="profession-container">
@@ -63,47 +101,45 @@
         </div>
     </section>
 
-    <section class="about" id="about">
-        <div class="about-img">
+    <section class="about section" id="about">
+        <div class="diagonal-bg"></div>
+        <div class="about-img" >
             <img src="img/code-typing-animate.svg" alt="">
         </div>
 
         <div class="about-content">
-            <h2 class="heading">Sobre <span>Mim</span></h2>
-            <p>Desenvolvedor web com especialização em <strong>front-end</strong> e uma grande paixão por <strong>tecnologia</strong> e <strong>inovação</strong>. Atualmente trabalho na <strong>Eterno Software Jurídico</strong> como <strong>Desenvolvedor Júnior</strong>, contribuindo para o desenvolvimento de <strong>soluções criativas</strong> e funcionalidades para o <strong>ERP</strong> da empresa. Estou cursando <strong>Análise e Desenvolvimento de Sistemas</strong> na <strong>Universidade de Caxias do Sul (UCS)</strong> e busco constantemente aprimorar minhas <strong>habilidades</strong> e <strong>conhecimento</strong> na área.</p>
-
-            <h3>Tecnologias e Ferramentas</h3>
+            <h2 class="heading" data-i18n="aboutMe"></h2>
+            <p data-i18n="aboutText"></p>
 
                 <div class="about-list">
+                    <h3 data-i18n="tools"></h3>
                     <ul>
-                        <li><strong>Linguagens:</strong> JavaScript, Java, Python, SQL</li>
+                        <li><strong data-i18n="linguages"></strong> JavaScript, Java, Python, SQL</li>
                         <li><strong>Frameworks:</strong> Astro, Vue.js</li>
-                        <li><strong>Banco de Dados:</strong> MySQL, PostgreSQL</li>
-                        <li><strong>Controle de Versão:</strong> Git/GitHub</li>
-                        <li><strong>Sistema Operacional:</strong> Ubuntu</li>
-                        </ul>
+                        <li><strong data-i18n="dataBase"></strong> MySQL, PostgreSQL</li>
+                        <li><strong data-i18n="versionControl"></strong> Git/GitHub</li>
+                        <li><strong data-i18n="operatingSystem"></strong> Ubuntu</li>
+                    </ul>
                 </div>
 
-
-            <div class="more">
-                <p><strong>Desde a infância fascinado por tecnologia</strong> e com uma grande curiosidade sobre como as coisas realmente funcionam. Com o tempo, essa curiosidade se transformou em paixão pela <strong>lógica da programação</strong>, que me motiva a buscar novos desafios e aprimorar minhas habilidades constantemente.</p>
-                
-                
-            </div>
-            <a href="#about" class="btn" id="aboutBtn">Leia mais</a>
+                <div class="about-list">
+                    <h3 data-i18n="experience"></h3>
+                    <em class="experienceTitle" data-i18n="experienceTitle"></em>
+                    <ul data-i18n="experienceList"></ul>
+                </div> 
         </div>
     </section>
 
-    <section class="portfolio" id="projetos">
-        <h2 class="heading">Meus <span>Projetos</span></h2>
+    <section class="portfolio section" id="projetos">
+        <h2 class="heading" data-i18n="myProjects"></h2>
 
         <div class="portfolio-container">
             <div class="portfolio-box">
                 <img src="img/LuanVet.PNG" alt="">
 
                 <div class="portfolio-layer">
-                    <h4>Projeto 1</h4>
-                    <p>Landing Page responsiva criada para um médico Veterinário</p>
+                    <h4><em data-i18n="project"></em> 1</h4>
+                    <p data-i18n="project1"></p>
                     <p>Javascript, HTML, CSS e SCSS</p>
                     <p>
                         <a href="https://luan-teles-vet.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -116,8 +152,8 @@
                 <img src="img/CF.PNG" alt="">
 
                 <div class="portfolio-layer">
-                    <h4>Projeto 2</h4>
-                    <p>WebApp para controle financeiro</p>
+                    <h4><em data-i18n="project"></em> 2</h4>
+                    <p data-i18n="project2"></p>
                     <p>Javascript, HTML e CSS</p>
                     <p>
                         <a href="https://eduardomorbeck.github.io/Controle-Financeiro/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -130,8 +166,8 @@
                 <img src="img/PrevisaoDoTempo.jpg" alt="">
 
                 <div class="portfolio-layer">
-                    <h4>Projeto 3</h4>
-                    <p>WebApp para previsão do tempo</p>
+                    <h4><em data-i18n="project"></em> 3</h4>
+                    <p data-i18n="project3"></p>
                     <p>Javascript, HTML e CSS</p>
                     <p>
                         <a href="https://eduardomorbeck.github.io/weather-forecast/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -144,8 +180,8 @@
                 <img src="img/Formulário.PNG" alt="">
 
                 <div class="portfolio-layer">
-                    <h4>Projeto 4</h4>
-                    <p>Formulário responsivo para novos cadastros</p>
+                    <h4><em data-i18n="project"></em> 4</h4>
+                    <p data-i18n="project4"></p>
                     <p>Javascript, HTML e CSS</p>
                     <p>
                         <a href="https://eduardomorbeck.github.io/Formulario/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -158,8 +194,8 @@
                 <img src="img/Java.jpg" alt="">
 
                 <div class="portfolio-layer">
-                    <h4>Projeto 5</h4>
-                    <p>Sistema para cadastramento e consulta de alunos e turmas</p>
+                    <h4><em data-i18n="project"></em> 5</h4>
+                    <p data-i18n="project5"></p>
                     <p>Java</p>
                     <p>
                         <a href="https://github.com/EduardoMorbeck/ProjetoJava" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -171,8 +207,8 @@
                 <img src="img/MiniGame.PNG" alt="">
 
                 <div class="portfolio-layer">
-                    <h4>Projeto 6</h4>
-                    <p>Mini game do Mário</p>
+                    <h4><em data-i18n="project"></em> 6</h4>
+                    <p data-i18n="project6"></p>
                     <p>Javascript, HTML e CSS</p>
                     <p>
                         <a href="https://eduardomorbeck.github.io/Mario-Mini-Game-JS/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -186,16 +222,14 @@
 
     <footer class="footer">
         <div class="footer-text">
-            <p>Copyright &copy; 2024 by Eduardo Morbeck</p>
-        </div>
-
-        <div class="footer-iconTop">
-            <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+            <p>Copyright &copy; 2025 by Eduardo Morbeck</p>
         </div>
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="script.js"></script>
+
+    <script defer src="i18n.js"></script>
 </body>
 </html>
