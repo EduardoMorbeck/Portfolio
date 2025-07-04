@@ -10,39 +10,3 @@ window.addEventListener("scroll", function () {
   monitor.style.opacity = opacityValue + 0.01;
   mouse.style.opacity = opacityValue - 0.4;
 });
-
-let isScrolling = false;
-window.addEventListener("wheel", function (event) {
-  if (window.innerWidth <= 968 || isScrolling) return;
-  isScrolling = true;
-
-  let sections = Array.from(document.querySelectorAll("section"));
-  let currentSection = getCurrentSection(sections);
-  let currentIndex = sections.indexOf(currentSection);
-
-  let nextIndex = event.deltaY > 0 ? currentIndex + 1 : currentIndex - 1;
-  if (nextIndex < 0 || nextIndex >= sections.length) {
-    isScrolling = false;
-    return;
-  }
-
-  let nextSection = sections[nextIndex];
-  window.scrollTo({
-    top: nextSection.offsetTop,
-    behavior: "smooth",
-  });
-
-  setTimeout(() => {
-    isScrolling = false;
-  }, 800);
-});
-
-function getCurrentSection(sections) {
-  let scrollPosition = window.scrollY + window.innerHeight / 4;
-  return sections.reduce((closest, section) => {
-    let offset = Math.abs(section.offsetTop - scrollPosition);
-    return offset < Math.abs(closest.offsetTop - scrollPosition)
-      ? section
-      : closest;
-  });
-}
