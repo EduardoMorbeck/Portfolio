@@ -1,0 +1,52 @@
+<header class="header" role="banner">
+  <a href="#home" class="logo" aria-label="Ir para o início">Portfolio.</a>
+
+  <nav class="navbar" role="navigation" aria-label="Navegação principal">
+    <a href="#home" class="nav-link active" data-i18n="home" aria-current="page"
+    ></a>
+    <a href="#about" class="nav-link" data-i18n="about"></a>
+    <a href="#projetos" class="nav-link" data-i18n="projects"></a>
+
+    <div class="language-select-wrapper">
+      <label
+        for="languageSelect"
+        class="language-label"
+        aria-label="Selecionar idioma"
+      >
+      </label>
+      <select
+        id="languageSelect"
+        class="languageSelect"
+        aria-label="Selecionar idioma"
+      >
+        <option value="pt" data-i18n="portuguese"></option>
+        <option value="en" data-i18n="english"></option>
+        <option value="es" data-i18n="spanish"></option>
+      </select>
+    </div>
+  </nav>
+
+  <div class="header-controls">
+    <input id="switch" type="checkbox" aria-label="Alternar modo escuro" />
+    <div class="circleContainer" id="darkMode-icon">
+      <div class="content">
+        <label
+          for="switch"
+          class="dark-mode-label"
+          aria-label="Alternar modo escuro"
+        >
+          <div class="circleIcon">
+            <div class="crescent"></div>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <label class="menu" for="menu-icon" aria-label="Abrir menu de navegação">
+      <input type="checkbox" id="menu-icon" aria-label="Menu de navegação" />
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+</header>
